@@ -6,13 +6,21 @@
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Help</title>
+    <style>
+        .divStyleOne{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 250px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
 
     {{>header}}
-
-    <p> {{message}} </p>
-
+    <div class="divStyleOne">{{message}}</div>
     {{>footer}}
 
 </body>

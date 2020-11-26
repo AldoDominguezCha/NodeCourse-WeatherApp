@@ -47,7 +47,7 @@ app.get('/about', (req, res)=> {
 app.get('/help', (req, res) =>{
     res.render('help', {
         title : 'Help page',
-        message : 'Help message placeholder',
+        message : 'This is just a practice Node.js web app. You are in the dummy help page.',
         name
     })
 })

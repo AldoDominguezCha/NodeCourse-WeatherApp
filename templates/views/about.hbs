@@ -6,11 +6,34 @@
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
     <title>About</title>
+    <style>
+        .divStyleOne{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 250px;
+        }
+
+        .divStyleTwo{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 60px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 26px;
+        }
+    </style>
 </head>
 <body>
 
     {{>header}}
-    <img src="/img/robot.png" alt="", class="image">
+
+    <div class="divStyleOne">
+        <img src="/img/robot.png" alt="", class="image">
+    </div>
+    <div class="divStyleTwo">
+        This is just a practice Node.js web app. You are in the dummy about page.
+    </div>
 
     {{>footer}}
 
