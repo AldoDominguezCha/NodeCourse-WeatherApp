@@ -1,3 +1,5 @@
+console.log('Fetching the weather for the location provided')
+
 const weatherForm = document.getElementById('weather')
 const searchPlace = document.getElementById('searchPlace')
 const displayResults = document.getElementById('display')
