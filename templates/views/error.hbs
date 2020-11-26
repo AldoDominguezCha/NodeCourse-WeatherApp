@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/weather.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        .styleDiv {
+            padding: 0px 0px 0px 0px;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            border: 0px;
+            width: 100%;
+            height: 250px;
+            text-align: center;
+        }
+        .styleDivTwo {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .styleHeader {
+            margin-top: 0px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+        }
+        .styleImage {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    {{>header}}
+
+    <div class="styleDiv">
+        <img class="styleImage" src="/img/error.png" alt="">
+    </div>
+
+    <div class="styleDivTwo">
+        <h1 class="styleHeader"> {{errorMessage}} </h1>
+    </div>
+
+    {{>footer}}
+
+</body>
+</html>

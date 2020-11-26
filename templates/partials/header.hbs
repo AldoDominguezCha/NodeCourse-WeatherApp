@@ -1,0 +1,48 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DCEDFF;
+    height: 70px;
+  }
+
+  li {
+    float: right;
+    border-left:1px solid #bbb;
+    height: 100%;
+  }
+
+  .first {
+    float: left;
+    border-left: 0px;
+  }
+
+  li a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+  }
+
+  li:hover:not(.active) {
+    background-color: #F3EEC3;
+  }
+
+  .active {
+    background-color: #F3EEC3;
+  }
+  
+</style>
+
+<ul>
+  <li class="first"><a href="/">Aldo's weather app</a></li>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/weather">Weather</a></li>
+</ul>
