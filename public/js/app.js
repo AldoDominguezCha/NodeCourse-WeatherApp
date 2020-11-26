@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (event) => {
     displayResults.style.paddingRight = '0'
     displayResults.textContent = 'Loading...'
 
-    fetch(`http://localhost:3000/weather?address=${place}`).then((response) => {
+    fetch(`/weather?address=${place}`).then((response) => {
         response.json().then(({error, searchedPlace, locationFound, forecast}) => {
             if(error){
                 displayResults.style.fontSize = '26px'
